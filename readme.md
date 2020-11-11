@@ -14,3 +14,5 @@ This repository contains the backend code for the `Canvas.io` project.
   [github.com/socketio/socket.io](https://github.com/socketio/socket.io)
 - `argon2`:
   [github.com/ranisalt/node-argon2](https://github.com/ranisalt/node-argon2)
+- `jsonwebtoken`:
+  [github.com/auth0/node-jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
