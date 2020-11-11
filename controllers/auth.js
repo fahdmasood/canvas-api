@@ -1,3 +1,5 @@
+'use strict';
+'use esversion:6';
 const { User } = require('../models');
 const argon = require('argon2');
 const jwt = require('jsonwebtoken');
