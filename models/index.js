@@ -7,7 +7,13 @@ const User = mongoose.model('user', UserSchema);
 
 mongoose.connect(
   `mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@${process.env.HOSTNAME}/${process.env.DATABASE}?retryWrites=true&w=majority`,
-  { useNewUrlParser: true, useCreateIndex: true, poolSize: 20, family: 4 }
+  {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    poolSize: 20,
+    family: 4,
+    useUnifiedTopology: true,
+  }
 );
 
 const database = mongoose.connection;
