@@ -78,8 +78,8 @@ module.exports = {
       await jwt.verify(token, process.env.SECRET, async (err, result) => {
         if (err) message = { message: 'invalid token' };
         else {
-          await User.remove({ username: result.username }, err => {
-            if (err) message = { message: 'account could not be deleted' };
+          await User.remove({ username: result.username }, error => {
+            if (error) message = { message: 'account could not be deleted' };
             else message = { message: 'account deleted' };
           });
         }
